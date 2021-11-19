@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+body
+{
+	background-color: #5ab1cc ;	
+}
+
+/* :H1 */
+h1 {
+	font-weight: bold ;
+	 text-align: center ;
+	font-family: arial ;
+	color: #3465a4 ;
+}
+h1::first-letter {
+	color: black ;
+	font-size: 200%
+}
+/* :H2 */
+h2 {
+	 text-align: center ;
+	 color: #3465a4 ;
+	 font-size: 125% ;
+}
+h2::first-letter {
+	font-size: 150%
+}
+h2:hover {
+	font-family: arial ;
+	background-color: yellow ;
+	color: red ;
+}
+
+p.cambio::first-line {
+	color: red ;
+}
+
+/* :Enlaces */
+a:link {
+	color: white ;
+}
+a:visited {
+	color:blue ;
+}
+
+img {
+	float: right ;
+}
+
+/* :Contadores */
+p.orden::before {
+	content: counter(cuenta-orden) ". " ;
+	counter-increment: cuenta-ciclos ;
+}
